@@ -7,6 +7,6 @@ enum AppointedMan[G] {
 }
 
 object AppointedMan:
-  def apply[G <: Gender](name: String, isElder: Boolean): AppointedMan[Gender] =
+  def apply(name: String, isElder: Boolean): AppointedMan[Male] =
     if isElder then Elder(name)
     else MinisterialServant(name)
