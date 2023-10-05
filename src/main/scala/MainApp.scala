@@ -23,10 +23,8 @@ object MainApp extends App {
   println()
   println(maleStudent.pair(maleStudent2))
   println(femaleStudent.pair(femaleStudent2))
-  println(maleStudent.pair(femaleStudent2))
-  println(femaleStudent.pair(maleStudent2))
 
-  println(StudentGenderPairing[Student[Gender]].pair(maleStudent, maleStudent2))
-  println(StudentGenderPairing[Student[Gender]].pair(femaleStudent, femaleStudent2))
-  println(StudentGenderPairing[Student[Gender]].pair(femaleStudent, maleStudent2))
+
+  println(StudentGenderPairing[Student[Male.type]].pair(maleStudent, maleStudent2))
+  println(StudentGenderPairing[Student[Female.type]].pair(femaleStudent, femaleStudent2))
 }

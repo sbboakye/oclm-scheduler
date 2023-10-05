@@ -10,6 +10,6 @@ trait StudentGenderPairing[S] {
 object StudentGenderPairing {
   def apply[S](implicit sp: StudentGenderPairing[S]): StudentGenderPairing[S] = sp
 
-  given studentGenderPairing: StudentGenderPairing[Student[Gender]] with
-    def pair(x: Student[Gender], y: Student[Gender]): Boolean = x pair y
+  given studentGenderPairing[G <: Gender]: StudentGenderPairing[Student[G]] with
+    def pair(x: Student[G], y: Student[G]): Boolean = x pair y
 }
