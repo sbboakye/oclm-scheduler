@@ -1,6 +1,6 @@
 package com.sambeth.oclm.utils.gender
 
-import com.sambeth.oclm.models.{Female, Male}
+import com.sambeth.oclm.models.Gender.*
 
 trait GenderPairing[G] {
   def pair(x: G, y: G): Boolean
@@ -9,9 +9,9 @@ trait GenderPairing[G] {
 object GenderPairing {
   def apply[G](implicit gp: GenderPairing[G]): GenderPairing[G] = gp
   
-  given malePairing: GenderPairing[Male] with
-    def pair(x: Male, y: Male): Boolean = true
+  given malePairing: GenderPairing[Male.type] with
+    def pair(x: Male.type, y: Male.type): Boolean = true
 
-  given femalePairing: GenderPairing[Female] with
-    def pair(x: Female, y: Female): Boolean = true
+  given femalePairing: GenderPairing[Female.type] with
+    def pair(x: Female.type, y: Female.type): Boolean = true
 }
