@@ -1,7 +1,9 @@
-package com.sambeth.oclm.models
+package com.sambeth.oclm.models.member
 
-import Gender.*
-import Member.*
+import com.sambeth.oclm.models.gender.Gender
+import com.sambeth.oclm.models.gender.Gender.Male
+import com.sambeth.oclm.models.member.Member.*
+import com.sambeth.oclm.models.member.{Member, MemberAssignment}
 
 enum MemberAssignment {
   case BibleReading(student: Member[Male.type])

@@ -1,5 +1,7 @@
-package com.sambeth.oclm.models
+package com.sambeth.oclm.models.member
 
+import com.sambeth.oclm.models.member.Member
+import com.sambeth.oclm.models.gender.Gender
 
 enum Member[G]:
   case Student(name: String) extends Member[G]

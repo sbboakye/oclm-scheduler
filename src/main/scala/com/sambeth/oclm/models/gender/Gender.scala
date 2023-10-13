@@ -1,4 +1,4 @@
-package com.sambeth.oclm.models
+package com.sambeth.oclm.models.gender
 
 //trait Gender
 //trait Female extends Gender

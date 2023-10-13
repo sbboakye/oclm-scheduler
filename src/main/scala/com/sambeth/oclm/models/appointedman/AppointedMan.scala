@@ -1,5 +1,6 @@
-package com.sambeth.oclm.models
+package com.sambeth.oclm.models.appointedman
 
+import com.sambeth.oclm.models.appointedman.AppointedMan
 
 enum AppointedMan {
   case Elder(name: String)

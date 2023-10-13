@@ -1,4 +1,5 @@
-package com.sambeth.oclm.models
+package com.sambeth.oclm.models.appointedman
+
 
 enum AppointedManAssignment {
   case Chairman[Elder](owner: Elder)

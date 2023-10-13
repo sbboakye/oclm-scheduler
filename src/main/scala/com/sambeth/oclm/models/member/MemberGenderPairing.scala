@@ -1,6 +1,7 @@
-package com.sambeth.oclm.utils.student
+package com.sambeth.oclm.models.member
 
-import com.sambeth.oclm.models.{Gender, Member}
+import com.sambeth.oclm.models.gender.Gender
+import com.sambeth.oclm.models.member.Member
 
 
 trait MemberGenderPairing[S] {

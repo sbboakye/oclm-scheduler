@@ -1,6 +1,6 @@
-package com.sambeth.oclm.utils.gender
+package com.sambeth.oclm.models.gender
 
-import com.sambeth.oclm.models.Gender.*
+import com.sambeth.oclm.models.gender.Gender.*
 
 trait GenderPairing[G] {
   def pair(x: G, y: G): Boolean

@@ -1,9 +1,9 @@
-import com.sambeth.oclm.models.{AppointedMan, Member}
-import com.sambeth.oclm.models.Gender.*
-import com.sambeth.oclm.utils.gender.GenderPairing
-import com.sambeth.oclm.utils.gender.GenderPairing.given
-import com.sambeth.oclm.utils.student.MemberGenderPairing
-import com.sambeth.oclm.utils.student.MemberGenderPairing.given
+import com.sambeth.oclm.models.gender.Gender.*
+import com.sambeth.oclm.models.appointedman.AppointedMan
+import com.sambeth.oclm.models.gender.GenderPairing
+import com.sambeth.oclm.models.member.{Member, MemberGenderPairing}
+import GenderPairing.given
+import MemberGenderPairing.given
 
 object MainApp extends App {
 
