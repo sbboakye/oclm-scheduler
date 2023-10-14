@@ -1,9 +1,8 @@
+import com.sambeth.oclm.models.gender.Gender
 import com.sambeth.oclm.models.gender.Gender.*
 import com.sambeth.oclm.models.appointedman.AppointedMan
-import com.sambeth.oclm.models.gender.GenderPairing
-import com.sambeth.oclm.models.member.{Member, MemberGenderPairing}
-import GenderPairing.given
-import MemberGenderPairing.given
+import com.sambeth.oclm.models.member.Member
+
 
 object MainApp extends App {
 
@@ -18,14 +17,7 @@ object MainApp extends App {
   println(maleStudent)
   println(femaleStudent)
 
-  println(GenderPairing[Male.type].pair(Male, Male))
-  println(GenderPairing[Female.type].pair(Female, Female))
-
   println()
   println(maleStudent.pair(maleStudent2))
   println(femaleStudent.pair(femaleStudent2))
-
-
-  println(MemberGenderPairing[Member[Male.type]].pair(maleStudent, maleStudent2))
-  println(MemberGenderPairing[Member[Female.type]].pair(femaleStudent, femaleStudent2))
 }
