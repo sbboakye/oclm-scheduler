@@ -25,7 +25,7 @@ jobs:
     env:
       TF_CPP_MIN_LOG_LEVEL: 3
       JAVA_OPTS: "-Xmx4096m -XX:+UseG1GC"
-    name: Build and Test ${{ matrix.os }}
+    name: Build and Test ${{ matrix.os }} ${{ matrix.version }}
 
     steps:
       - uses: actions/checkout@v3
