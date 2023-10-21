@@ -17,7 +17,8 @@ object MainApp extends App {
   println(maleStudent)
   println(femaleStudent)
 
-  println()
-  println(maleStudent.pair(maleStudent2))
-  println(femaleStudent.pair(femaleStudent2))
+
+//  println()
+//  println(maleStudent.pair(maleStudent2))
+//  println(femaleStudent.pair(femaleStudent2))
 }
