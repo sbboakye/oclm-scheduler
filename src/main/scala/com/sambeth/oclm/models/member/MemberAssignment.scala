@@ -14,14 +14,14 @@ enum MemberAssignment {
 }
 
 object MemberAssignment {
-  def apply[G <: Gender](nameOfAssignment: String, owner: Member[G], support: Option[Member[G]]): MemberAssignment =
-    nameOfAssignment match
-      case "InitialCall" => InitialCall(owner, support.get)
-      case "ReturnVisit" => ReturnVisit(owner, support.get)
-      case "BibleStudy" => BibleStudy(owner, support.get)
+  def apply[G](assignmentName: String, owner: Member[G], support: Member[G]): MemberAssignment =
+    assignmentName match
+      case "InitialCall" => InitialCall(owner, support)
+      case "ReturnVisit" => ReturnVisit(owner, support)
+      case "BibleStudy" => BibleStudy(owner, support)
 
-  def apply(nameOfAssignment: String, owner: Member[Male.type]): MemberAssignment =
-    nameOfAssignment match
+  def apply(assignmentName: String, owner: Member[Male.type]): MemberAssignment =
+    assignmentName match
       case "BibleReading" => BibleReading(owner)
       case "FiveMinutesTalk" => FiveMinutesTalk(owner)
 }
