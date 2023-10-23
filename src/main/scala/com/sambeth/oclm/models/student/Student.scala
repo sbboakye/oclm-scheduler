@@ -7,9 +7,6 @@ import com.sambeth.oclm.models.student.PairedStudentAssignment.{BibleStudy, Init
 import com.sambeth.oclm.models.student.SoloStudentAssignment.{BibleReading, FiveMinutesTalk}
 
 case class Student[G <: Gender](name: String)
-//  def assign(assignmentName: String, support: Option[Student[G]]): PairedStudentAssignment = support match
-//    case None => PairedStudentAssignment(assignmentName, this.asInstanceOf[Student[Gender.Male.type]])
-//    case Some(student) => PairedStudentAssignment(assignmentName, this, student)
 
 
 object Student:

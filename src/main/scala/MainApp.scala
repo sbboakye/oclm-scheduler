@@ -21,6 +21,7 @@ object MainApp extends App {
 //  println(maleStudent.assignBibleStudy(femaleStudent2))
   println(maleStudent.assignBibleStudy(maleStudent2))
   println(maleStudent.assignFiveMinutesTalk)
+  println(maleStudent.assignFiveMinutesTalk)
 
 //  println(MemberAssignment.assign())
 //  println(InitialCall[Male.type].assign(maleStudent, maleStudent2))
