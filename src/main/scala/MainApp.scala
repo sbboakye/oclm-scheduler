@@ -1,14 +1,15 @@
 import com.sambeth.oclm.models.gender.Gender
 import com.sambeth.oclm.models.gender.Gender.*
 import com.sambeth.oclm.models.appointedman.AppointedMan
-//import com.sambeth.oclm.models.student.StudentAssignment.InitialCall
+import com.sambeth.oclm.models.appointedman.AppointedManResponsibility.*
+
 import com.sambeth.oclm.models.student.Student
 
 
 object MainApp extends App {
 
-  val elder = AppointedMan("Samuel Baafi Boakye", true)
-  val ms = AppointedMan("Samuel Acquah", false)
+  val elder = AppointedMan[Elder.type]("Samuel Baafi Boakye")
+  val ms = AppointedMan[MinisterialServant.type]("Samuel Acquah")
   val maleStudent = Student[Male.type]("Tony Gyan")
   val maleStudent2 = Student[Male.type]("Real Gyan")
   val femaleStudent = Student[Female.type]("Casey Gyan")
@@ -22,6 +23,8 @@ object MainApp extends App {
   println(maleStudent.assignBibleStudy(maleStudent2))
   println(maleStudent.assignFiveMinutesTalk)
   println(maleStudent.assignFiveMinutesTalk)
+//  println(elder.assign)
+//  println(ms.assign)
 
 //  println(MemberAssignment.assign())
 //  println(InitialCall[Male.type].assign(maleStudent, maleStudent2))
