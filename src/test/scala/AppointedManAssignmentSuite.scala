@@ -3,7 +3,7 @@ import com.sambeth.oclm.models.appointedman.AppointedManResponsibility.{Elder, M
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
-class AppointedManSuite extends AnyFlatSpec with should.Matchers {
+class AppointedManAssignmentSuite extends AnyFlatSpec with should.Matchers {
 
   // starts elder tests
   "An appointed man who is an elder" should "be able to handle opening prayer assignment and it should compile" in {
